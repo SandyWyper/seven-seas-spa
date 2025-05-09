@@ -92,3 +92,38 @@ main {
   border-radius: 15px;
   /* Adjust the px value as needed */
 }
+
+/* Newsletter form styles */
+.newsletter-form {
+  max-width: 100%;
+}
+
+.newsletter-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffebd4;
+}
+
+.newsletter-form .form-control::placeholder {
+  color: rgba(255, 235, 212, 0.7);
+}
+
+.newsletter-form .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffebd4;
+  box-shadow: none;
+}
+
+.newsletter-form .btn-primary {
+  background-color: #ffebd4;
+  border: none;
+  color: #6f4e37;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form .btn-primary:hover {
+  background-color: #fff;
+  transform: translateY(-2px);
+}

@@ -131,11 +131,43 @@
     <!-- Footer -->
     <footer class="footer text-center text-lg-start py-3 mt-auto">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-md-start mb-3 mb-md-0">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-6">
+            <h5 class="text-uppercase mb-3">Newsletter Sign-up</h5>
+            <form
+              class="newsletter-form"
+              id="newsletterForm"
+              action="thankyou.html"
+            >
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="newsletterName"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletterEmail"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-start mb-3 mb-md-0 order-2 order-md-1">
             <p>© 2022 Seven Seas Spa</p>
           </div>
-          <div class="col-md-6 text-md-end">
+          <div class="col-md-6 text-md-end order-1 order-md-2 mb-4 mb-md-0">
             <a
               href="https://www.facebook.com/Code.InstituteIRL/"
               target="_blank"
