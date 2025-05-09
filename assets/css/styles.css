@@ -1,4 +1,8 @@
 /* Apply the Handlee font to all headings */
+:root {
+  --border-radius-standard: 8px;
+}
+
 h1,
 h2,
 h3,
@@ -74,6 +78,8 @@ main {
 /* Style the service cards */
 .card {
   border: none;
+  border-radius: var(--border-radius-standard);
+  overflow: hidden;
 }
 
 .card-img-top {
@@ -81,16 +87,24 @@ main {
   object-fit: cover;
 }
 
+/* Blog card image styles */
+.blog-card-img {
+  aspect-ratio: 1/1;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* Set the size of the testimonial images */
 .testimonial-image {
   width: 100px;
   height: 100px;
+  border-radius: 50%; /* Keep circular for testimonials */
 }
 
-/* Applies rounded corners to images with the 'rounded-image' class. Adjust the border-radius value to control the roundness. */
+/* Applies rounded corners to images with the 'rounded-image' class */
 .rounded-image {
-  border-radius: 15px;
-  /* Adjust the px value as needed */
+  border-radius: var(--border-radius-standard);
 }
 
 /* Newsletter form styles */
@@ -132,4 +146,20 @@ main {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  border-radius: 50%; /* Keep circular for testimonials */
+}
+
+/* Add border radius to all images in blog posts */
+.blog-content img {
+  border-radius: var(--border-radius-standard);
+}
+
+/* Team member image styles */
+.team-member-img {
+  aspect-ratio: 1/1;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--border-radius-standard);
 }
