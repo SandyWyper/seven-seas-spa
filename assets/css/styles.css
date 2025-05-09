@@ -127,3 +127,9 @@ main {
   background-color: #fff;
   transform: translateY(-2px);
 }
+
+.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
